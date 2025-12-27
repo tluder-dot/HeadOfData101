@@ -1,13 +1,13 @@
 # HeadOfData101
 
-Repository for the Head of Data 101 course (Albert School). End-to-end project focused on web scraping, data cleaning, and preparing an analytical dataset from AutoScout24 car listings.
+Repository for the Head of Data 101 course (Albert School). End-to-end project focused on web scraping, data cleaning, building a BigQuery star schema, and running regression analysis on AutoScout24 car listings.
 
-## Current status
+## Project flow
 
-- Beginner-friendly scraping notebook with guided steps.
-- Preprocessing notebook to transform raw data into a clean analytical dataset.
-- SQL notebook to connect to BigQuery, run queries, and visualize results.
-- Raw and processed datasets stored under `data/` with timestamped outputs.
+1. Scraping: collect raw listings from AutoScout24.
+2. Preprocessing: clean and normalize the raw data.
+3. BigQuery tables: create the schema and load data.
+4. Regression: fit models, label bargains, and publish results.
 
 ## Repository structure
 
@@ -20,8 +20,9 @@ Repository for the Head of Data 101 course (Albert School). End-to-end project f
 |- notebooks/
 |  |- scrapping/          # Scraping (AutoScout24)
 |  |- preprocessing/      # Cleaning and normalization
-|  `- sql/                # BigQuery querying and analysis
-|- reports/               # Reports and outputs (currently empty)
+|  |- sql/                # BigQuery querying and analysis
+|  `- regression/         # Regression and bargain labeling
+|- docs/                  # Saved figures from notebooks
 |- sql/                   # BigQuery DDL/DML scripts for the star schema
 |- src/                   # Reusable code (currently empty)
 `- README.md
@@ -32,6 +33,7 @@ Repository for the Head of Data 101 course (Albert School). End-to-end project f
 - Python 3.x
 - Jupyter (or VS Code with notebook support)
 - Core libraries: `requests`, `beautifulsoup4`, `pandas`, `numpy`, `matplotlib`
+- Modeling libraries: `scikit-learn`, `statsmodels`
 - BigQuery libraries: `google-cloud-bigquery`, `db-dtypes`
 
 ## How to run
@@ -39,22 +41,24 @@ Repository for the Head of Data 101 course (Albert School). End-to-end project f
 1. Create and activate a virtual environment.
 2. Install dependencies:
 
-```bash
-pip install requests beautifulsoup4 pandas numpy matplotlib
-pip install "google-cloud-bigquery[pandas]" db-dtypes
+```powershell
+.\.venv\Scripts\python.exe -m pip install requests beautifulsoup4 pandas numpy matplotlib scikit-learn statsmodels
+.\.venv\Scripts\python.exe -m pip install "google-cloud-bigquery[pandas]" db-dtypes pyarrow
 ```
 
-3. Open the notebooks:
+3. Open the notebooks (in order):
 
 - `notebooks/scrapping/scrapping.ipynb`
 - `notebooks/preprocessing/preprocessing.ipynb`
 - `notebooks/sql/sqlqueries.ipynb`
+- `notebooks/regression/regression.ipynb`
 
 ## Data
 
 - **Raw**: generated under `data/raw/` with timestamps. Never modified.
 - **Processed**: saved under `data/processed/` with timestamps.
 - **Sample**: examples in `data/samplefiles/`.
+- **Figures**: saved under `docs/` from the regression notebook.
 
 Expected raw columns (from the preprocessing notebook):
 `make`, `model`, `mileage`, `price`, `registration`, `fuel`, `country`, `brand`, `page`.
@@ -65,25 +69,21 @@ Expected raw columns (from the preprocessing notebook):
 - Respect delays between requests.
 - Review the website terms of use and local legal requirements.
 
-## Suggested next steps
-
-- Consolidate scraping and preprocessing into reusable scripts in `src/`.
-- Add exploratory analysis and visuals in `reports/`.
-- Define a reproducible pipeline (make/pyproject) and basic tests.
-
 ## BigQuery Analytical Database
 
 Project: albertheadofdata101
 Dataset: autoscout
 
 This project uses Google BigQuery as an analytical data warehouse following a star schema design.
+Tables created include dimensions (`dim_model`, `dim_fuel`, `dim_country`), fact listings (`fact_listings`), and model output (`fact_bargains`).
 
 ### Build order
 
 1. Upload the cleaned CSV as `stg_listings_clean`
-2. Execute `sql/01_create_tables.sql`
+2. Execute `sql/00_create_all_tables.sql` (consolidated DDL for all tables)
 3. Execute `sql/02_build_dimensions.sql`
 4. Execute `sql/03_build_fact.sql`
+5. Run the regression notebook to create `fact_bargains`
 
 ### Design principles
 
