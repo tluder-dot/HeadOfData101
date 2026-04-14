@@ -50,6 +50,14 @@ Current final notebook target path:
 - `notebooks/04_regression_audi_a3_germany.ipynb`
 - `notebooks/05_classification_audi_a3_germany.ipynb`
 
+## Session 03 Support Notebook
+
+For Session 03, the repo also includes a complementary exploratory notebook:
+
+- `notebooks/01b_raw_data_eda_before_preprocessing_audi_a3_germany.ipynb`
+
+This notebook is intentionally **outside the final product pipeline**. It is a classroom support notebook used **before** preprocessing to inspect the raw scrape, understand anomalies, discuss duplicate behavior, and justify later preprocessing decisions. It does **not** save cleaned outputs and does **not** replace the production preprocessing notebook.
+
 ## SQL Assets
 
 SQL is organized in ordered files under `sql/`:

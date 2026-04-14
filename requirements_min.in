@@ -3,6 +3,8 @@ ipython
 matplotlib
 numpy
 pandas
+nbformat
+plotly
 requests
 scikit-learn
 google-cloud-bigquery
