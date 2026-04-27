@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F8FAFC"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1200" height="70" fill="#1E293B"/>
+  <text x="30" y="35" fill="#FFFFFF" font-size="20" font-weight="600">Used Vehicle Opportunity Portfolio</text>
+  <text x="30" y="58" fill="#94A3B8" font-size="13">Page 1 · Market Overview</text>
+  <text x="1170" y="40" text-anchor="end" fill="#FFFFFF" font-size="13" font-weight="500">CONSUMER BANK · DATA UNIT</text>
+  <text x="1170" y="58" text-anchor="end" fill="#94A3B8" font-size="11">Scope: VW Golf · Germany</text>
+
+  <!-- Filter bar -->
+  <rect x="0" y="70" width="1200" height="45" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="30" y="97" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">FILTERS:</text>
+  <rect x="105" y="82" width="110" height="22" rx="11" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+  <text x="160" y="97" text-anchor="middle" fill="#1D4ED8" font-size="11">Fuel: All</text>
+  <rect x="225" y="82" width="130" height="22" rx="11" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+  <text x="290" y="97" text-anchor="middle" fill="#1D4ED8" font-size="11">Age: 2–15 years</text>
+  <rect x="365" y="82" width="150" height="22" rx="11" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1"/>
+  <text x="440" y="97" text-anchor="middle" fill="#1D4ED8" font-size="11">Price: 2k–60k EUR</text>
+  <rect x="525" y="82" width="130" height="22" rx="11" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="590" y="97" text-anchor="middle" fill="#64748B" font-size="11">+ Add filter</text>
+
+  <!-- KPI tiles row -->
+  <g>
+    <rect x="30" y="135" width="275" height="90" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="50" y="162" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">LISTINGS IN SCOPE</text>
+    <text x="50" y="198" fill="#1E293B" font-size="30" font-weight="700">1,240</text>
+    <text x="180" y="198" fill="#10B981" font-size="12" font-weight="500">▲ captured 24 Apr</text>
+
+    <rect x="317" y="135" width="275" height="90" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="337" y="162" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">AVG LISTING PRICE</text>
+    <text x="337" y="198" fill="#1E293B" font-size="30" font-weight="700">€18,450</text>
+    <text x="470" y="198" fill="#64748B" font-size="12">median €16,900</text>
+
+    <rect x="604" y="135" width="275" height="90" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="624" y="162" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">AVG MILEAGE</text>
+    <text x="624" y="198" fill="#1E293B" font-size="30" font-weight="700">98k km</text>
+    <text x="750" y="198" fill="#64748B" font-size="12">median 92k km</text>
+
+    <rect x="891" y="135" width="275" height="90" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="911" y="162" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">AVG AGE</text>
+    <text x="911" y="198" fill="#1E293B" font-size="30" font-weight="700">8.3 yrs</text>
+    <text x="1030" y="198" fill="#64748B" font-size="12">range 2–15 yrs</text>
+  </g>
+
+  <!-- Main chart area: Price distribution histogram -->
+  <rect x="30" y="248" width="735" height="290" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="50" y="275" fill="#1E293B" font-size="14" font-weight="600">Price Distribution</text>
+  <text x="50" y="292" fill="#64748B" font-size="11">How the market is priced — inform segment thresholds</text>
+
+  <!-- Histogram bars (placeholder shape) -->
+  <g>
+    <rect x="60" y="480" width="40" height="30" fill="#BFDBFE"/>
+    <rect x="105" y="460" width="40" height="50" fill="#93C5FD"/>
+    <rect x="150" y="420" width="40" height="90" fill="#60A5FA"/>
+    <rect x="195" y="380" width="40" height="130" fill="#3B82F6"/>
+    <rect x="240" y="340" width="40" height="170" fill="#2563EB"/>
+    <rect x="285" y="360" width="40" height="150" fill="#3B82F6"/>
+    <rect x="330" y="395" width="40" height="115" fill="#60A5FA"/>
+    <rect x="375" y="430" width="40" height="80" fill="#93C5FD"/>
+    <rect x="420" y="460" width="40" height="50" fill="#BFDBFE"/>
+    <rect x="465" y="475" width="40" height="35" fill="#DBEAFE"/>
+    <rect x="510" y="485" width="40" height="25" fill="#DBEAFE"/>
+    <rect x="555" y="490" width="40" height="20" fill="#DBEAFE"/>
+    <rect x="600" y="495" width="40" height="15" fill="#DBEAFE"/>
+    <rect x="645" y="500" width="40" height="10" fill="#DBEAFE"/>
+    <rect x="690" y="503" width="40" height="7" fill="#DBEAFE"/>
+  </g>
+  <!-- X axis -->
+  <line x1="55" y1="510" x2="735" y2="510" stroke="#94A3B8" stroke-width="1"/>
+  <text x="65" y="528" fill="#64748B" font-size="10">2k</text>
+  <text x="200" y="528" fill="#64748B" font-size="10">10k</text>
+  <text x="380" y="528" fill="#64748B" font-size="10">20k</text>
+  <text x="560" y="528" fill="#64748B" font-size="10">40k</text>
+  <text x="700" y="528" fill="#64748B" font-size="10">60k EUR</text>
+
+  <!-- Price label overlay (AutoScout categories) -->
+  <g transform="translate(520, 310)">
+    <rect x="0" y="0" width="220" height="130" rx="4" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="110" y="20" text-anchor="middle" fill="#475569" font-size="11" font-weight="600">PRICE LABEL MIX</text>
+    <rect x="15" y="35" width="14" height="14" fill="#10B981"/>
+    <text x="38" y="47" fill="#1E293B" font-size="11">top-price — 18%</text>
+    <rect x="15" y="55" width="14" height="14" fill="#3B82F6"/>
+    <text x="38" y="67" fill="#1E293B" font-size="11">good-price — 42%</text>
+    <rect x="15" y="75" width="14" height="14" fill="#94A3B8"/>
+    <text x="38" y="87" fill="#1E293B" font-size="11">fair-price — 31%</text>
+    <rect x="15" y="95" width="14" height="14" fill="#F59E0B"/>
+    <text x="38" y="107" fill="#1E293B" font-size="11">toolow / over — 9%</text>
+  </g>
+
+  <!-- Secondary chart: Fuel & variant breakdown -->
+  <rect x="778" y="248" width="388" height="290" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="798" y="275" fill="#1E293B" font-size="14" font-weight="600">Fuel &amp; Variant Mix</text>
+  <text x="798" y="292" fill="#64748B" font-size="11">Market composition · basis for scope decisions</text>
+
+  <!-- Stacked bar mock -->
+  <g>
+    <text x="798" y="325" fill="#64748B" font-size="11" font-weight="500">BY FUEL TYPE</text>
+    <rect x="798" y="335" width="235" height="28" fill="#3B82F6"/>
+    <rect x="1033" y="335" width="80" height="28" fill="#10B981"/>
+    <rect x="1113" y="335" width="25" height="28" fill="#F59E0B"/>
+    <rect x="1138" y="335" width="8" height="28" fill="#EF4444"/>
+    <text x="808" y="353" fill="#FFFFFF" font-size="11" font-weight="500">Petrol 61%</text>
+    <text x="1040" y="353" fill="#FFFFFF" font-size="11" font-weight="500">Diesel 22%</text>
+    <text x="1117" y="353" fill="#FFFFFF" font-size="10">Hyb</text>
+
+    <text x="798" y="395" fill="#64748B" font-size="11" font-weight="500">BY VARIANT</text>
+    <rect x="798" y="405" width="180" height="28" fill="#1E40AF"/>
+    <rect x="978" y="405" width="100" height="28" fill="#3B82F6"/>
+    <rect x="1078" y="405" width="48" height="28" fill="#60A5FA"/>
+    <rect x="1126" y="405" width="20" height="28" fill="#93C5FD"/>
+    <text x="808" y="423" fill="#FFFFFF" font-size="11" font-weight="500">Golf (base) 52%</text>
+    <text x="985" y="423" fill="#FFFFFF" font-size="11" font-weight="500">Variant 27%</text>
+    <text x="1082" y="423" fill="#FFFFFF" font-size="10">GTI/R 13%</text>
+
+    <text x="798" y="465" fill="#64748B" font-size="11" font-weight="500">BY AGE BAND</text>
+    <rect x="798" y="475" width="95" height="28" fill="#10B981"/>
+    <rect x="893" y="475" width="160" height="28" fill="#3B82F6"/>
+    <rect x="1053" y="475" width="93" height="28" fill="#94A3B8"/>
+    <text x="808" y="493" fill="#FFFFFF" font-size="11" font-weight="500">2–5 yrs</text>
+    <text x="900" y="493" fill="#FFFFFF" font-size="11" font-weight="500">6–10 yrs</text>
+    <text x="1060" y="493" fill="#FFFFFF" font-size="11" font-weight="500">11–15 yrs</text>
+  </g>
+
+  <!-- Commentary panel -->
+  <rect x="30" y="558" width="1136" height="180" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="50" y="585" fill="#1E293B" font-size="14" font-weight="600">Market Context</text>
+
+  <g transform="translate(50, 605)">
+    <circle cx="5" cy="8" r="3" fill="#3B82F6"/>
+    <text x="18" y="12" fill="#334155" font-size="12"><tspan font-weight="600">Liquid and price-stable.</tspan> The Golf is Germany's most liquid used compact, with consistent demand across all</text>
+    <text x="18" y="30" fill="#334155" font-size="12">age bands — the default financing-portfolio candidate for a retail bank entering the used-vehicle space.</text>
+
+    <circle cx="5" cy="58" r="3" fill="#3B82F6"/>
+    <text x="18" y="62" fill="#334155" font-size="12"><tspan font-weight="600">Segment structure.</tspan> Petrol dominates post-2018 registrations; diesel is concentrated in older listings. GTI/R</text>
+    <text x="18" y="80" fill="#334155" font-size="12">variants trade at a clear premium and likely form their own sub-segment in the top-price label.</text>
+
+    <circle cx="5" cy="108" r="3" fill="#3B82F6"/>
+    <text x="18" y="112" fill="#334155" font-size="12"><tspan font-weight="600">Data note.</tspan> Numbers above are illustrative placeholders — the real values will populate once Session 3</text>
+    <text x="18" y="130" fill="#334155" font-size="12">preprocessing lands the cleaned CSV and the warehouse is built.</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="30" y="775" fill="#94A3B8" font-size="10">Source: AutoScout24 · scope: Volkswagen Golf · listing country: Germany · last refresh: &lt;pending Session 2&gt;</text>
+  <text x="1170" y="775" text-anchor="end" fill="#94A3B8" font-size="10">WIREFRAME · Session 1 mock · not production data</text>
+</svg>

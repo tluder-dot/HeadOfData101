@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F8FAFC"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="1200" height="70" fill="#1E293B"/>
+  <text x="30" y="35" fill="#FFFFFF" font-size="20" font-weight="600">Used Vehicle Opportunity Portfolio</text>
+  <text x="30" y="58" fill="#94A3B8" font-size="13">Page 4 · Committee Recommendation</text>
+  <text x="1170" y="40" text-anchor="end" fill="#FFFFFF" font-size="13" font-weight="500">CONSUMER BANK · DATA UNIT</text>
+  <text x="1170" y="58" text-anchor="end" fill="#94A3B8" font-size="11">Scope: VW Golf · Germany · Refreshed: &lt;auto-date&gt;</text>
+
+  <!-- Executive summary band -->
+  <rect x="0" y="70" width="1200" height="90" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="30" y="95" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">EXECUTIVE SUMMARY FOR THE INVESTMENT COMMITTEE</text>
+  <text x="30" y="120" fill="#1E293B" font-size="13" font-weight="500">Of 1,240 listings in scope, <tspan fill="#1D4ED8" font-weight="700">25 are recommended for acquisition review</tspan> — combining below-expected pricing</text>
+  <text x="30" y="138" fill="#1E293B" font-size="13" font-weight="500">(regression residual ≤ −€2,000) with high top-price probability (p ≥ 0.45 from Random Forest classifier).</text>
+  <text x="30" y="152" fill="#64748B" font-size="11" font-style="italic">Expected committee action: prioritize the 10 listings flagged 'review now' this week; monitor the remaining 15.</text>
+
+  <!-- KPI row: the decision numbers -->
+  <g>
+    <rect x="30" y="180" width="275" height="100" rx="6" fill="#1E40AF"/>
+    <text x="50" y="208" fill="#BFDBFE" font-size="11" font-weight="600" letter-spacing="0.5">REVIEW NOW</text>
+    <text x="50" y="252" fill="#FFFFFF" font-size="38" font-weight="700">10</text>
+    <text x="130" y="252" fill="#BFDBFE" font-size="12">highest-confidence candidates</text>
+    <text x="50" y="268" fill="#BFDBFE" font-size="11">p ≥ 0.60 · gap ≥ €2,500</text>
+
+    <rect x="317" y="180" width="275" height="100" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="337" y="208" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">MONITOR</text>
+    <text x="337" y="252" fill="#1E293B" font-size="38" font-weight="700">15</text>
+    <text x="420" y="252" fill="#64748B" font-size="12">watch for price movement</text>
+    <text x="337" y="268" fill="#64748B" font-size="11">0.45 ≤ p &lt; 0.60</text>
+
+    <rect x="604" y="180" width="275" height="100" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="624" y="208" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">EST. PORTFOLIO UPSIDE</text>
+    <text x="624" y="252" fill="#10B981" font-size="38" font-weight="700">€31k</text>
+    <text x="770" y="252" fill="#64748B" font-size="12">on top 10 (gap sum)</text>
+    <text x="624" y="268" fill="#64748B" font-size="11">pre-financing margin estimate</text>
+
+    <rect x="891" y="180" width="275" height="100" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="911" y="208" fill="#64748B" font-size="11" font-weight="600" letter-spacing="0.5">SIGNAL CONFIDENCE</text>
+    <text x="911" y="252" fill="#F59E0B" font-size="38" font-weight="700">MEDIUM</text>
+    <text x="911" y="268" fill="#64748B" font-size="11">small scope · thin classifier · see limitations →</text>
+  </g>
+
+  <!-- Main: Recommendation table (the hero of the page) -->
+  <rect x="30" y="302" width="770" height="330" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="50" y="328" fill="#1E293B" font-size="14" font-weight="600">Recommended Acquisitions — Top 10</text>
+  <text x="50" y="346" fill="#64748B" font-size="11">Each listing combines a gap signal (undervaluation) with a top-price probability (market consensus it's well-priced)</text>
+
+  <line x1="50" y1="360" x2="780" y2="360" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="60" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">#</text>
+  <text x="100" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">LISTING · VARIANT</text>
+  <text x="310" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">PRICE</text>
+  <text x="400" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">GAP</text>
+  <text x="490" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">p (TOP)</text>
+  <text x="580" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">CONFIDENCE</text>
+  <text x="700" y="378" fill="#64748B" font-size="10" font-weight="600" letter-spacing="0.5">ACTION</text>
+  <line x1="50" y1="385" x2="780" y2="385" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Rows -->
+  <g font-size="11" fill="#1E293B">
+    <!-- Row 1 -->
+    <text x="60" y="403">1</text>
+    <text x="100" y="403">#0412 · Golf 8 (2020)</text>
+    <text x="310" y="403">€19,800</text>
+    <text x="400" y="403" fill="#10B981" font-weight="700">−€3,600</text>
+    <text x="490" y="403" font-weight="700">0.79</text>
+    <circle cx="590" cy="400" r="4" fill="#10B981"/><circle cx="602" cy="400" r="4" fill="#10B981"/><circle cx="614" cy="400" r="4" fill="#10B981"/>
+    <rect x="695" y="391" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="404" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <!-- Row 2 -->
+    <text x="60" y="423">2</text>
+    <text x="100" y="423">#1042 · Golf Variant (2019)</text>
+    <text x="310" y="423">€14,900</text>
+    <text x="400" y="423" fill="#10B981" font-weight="700">−€3,300</text>
+    <text x="490" y="423" font-weight="700">0.74</text>
+    <circle cx="590" cy="420" r="4" fill="#10B981"/><circle cx="602" cy="420" r="4" fill="#10B981"/><circle cx="614" cy="420" r="4" fill="#10B981"/>
+    <rect x="695" y="411" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="424" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <!-- Row 3 -->
+    <text x="60" y="443">3</text>
+    <text x="100" y="443">#0156 · Golf GTI (2018)</text>
+    <text x="310" y="443">€21,200</text>
+    <text x="400" y="443" fill="#10B981" font-weight="700">−€2,900</text>
+    <text x="490" y="443" font-weight="700">0.71</text>
+    <circle cx="590" cy="440" r="4" fill="#10B981"/><circle cx="602" cy="440" r="4" fill="#10B981"/><circle cx="614" cy="440" r="4" fill="#E5E7EB"/>
+    <rect x="695" y="431" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="444" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <!-- Row 4 -->
+    <text x="60" y="463">4</text>
+    <text x="100" y="463">#0887 · Golf 8 (2021)</text>
+    <text x="310" y="463">€17,500</text>
+    <text x="400" y="463" fill="#10B981" font-weight="700">−€2,700</text>
+    <text x="490" y="463" font-weight="700">0.68</text>
+    <circle cx="590" cy="460" r="4" fill="#10B981"/><circle cx="602" cy="460" r="4" fill="#10B981"/><circle cx="614" cy="460" r="4" fill="#E5E7EB"/>
+    <rect x="695" y="451" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="464" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <!-- Row 5 -->
+    <text x="60" y="483">5</text>
+    <text x="100" y="483">#0621 · Golf 7 (2016)</text>
+    <text x="310" y="483">€9,900</text>
+    <text x="400" y="483" fill="#10B981" font-weight="700">−€2,400</text>
+    <text x="490" y="483" font-weight="700">0.64</text>
+    <circle cx="590" cy="480" r="4" fill="#10B981"/><circle cx="602" cy="480" r="4" fill="#10B981"/><circle cx="614" cy="480" r="4" fill="#E5E7EB"/>
+    <rect x="695" y="471" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="484" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <!-- Row 6-10 -->
+    <text x="60" y="503">6</text>
+    <text x="100" y="503">#1198 · Golf Variant (2017)</text>
+    <text x="310" y="503">€11,400</text>
+    <text x="400" y="503" fill="#10B981" font-weight="700">−€2,200</text>
+    <text x="490" y="503" font-weight="700">0.62</text>
+    <circle cx="590" cy="500" r="4" fill="#10B981"/><circle cx="602" cy="500" r="4" fill="#10B981"/><circle cx="614" cy="500" r="4" fill="#E5E7EB"/>
+    <rect x="695" y="491" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="504" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <text x="60" y="523">7</text>
+    <text x="100" y="523">#0302 · Golf 7 (2015)</text>
+    <text x="310" y="523">€8,500</text>
+    <text x="400" y="523" fill="#10B981" font-weight="700">−€2,100</text>
+    <text x="490" y="523" font-weight="700">0.61</text>
+    <circle cx="590" cy="520" r="4" fill="#10B981"/><circle cx="602" cy="520" r="4" fill="#10B981"/><circle cx="614" cy="520" r="4" fill="#E5E7EB"/>
+    <rect x="695" y="511" width="75" height="18" rx="3" fill="#10B981"/><text x="732" y="524" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600">REVIEW</text>
+
+    <text x="60" y="553">8–10</text>
+    <text x="100" y="553" fill="#94A3B8" font-style="italic">Remaining candidates populate once model outputs land in BigQuery (Sessions 6–7)</text>
+  </g>
+
+  <text x="50" y="605" fill="#64748B" font-size="10">Legend: 🟢 = 3 dots confidence · gap = actual − expected · p = top-price probability from classifier · action threshold can be tuned on Page 3</text>
+
+  <!-- Right side: Limitations & next steps -->
+  <rect x="814" y="302" width="352" height="330" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="834" y="328" fill="#1E293B" font-size="14" font-weight="600">Limitations &amp; Next Steps</text>
+  <text x="834" y="346" fill="#64748B" font-size="11">What the committee should know before acting</text>
+
+  <g transform="translate(834, 368)">
+    <circle cx="5" cy="7" r="3" fill="#F59E0B"/>
+    <text x="18" y="11" fill="#334155" font-size="11" font-weight="600">Scope is narrow</text>
+    <text x="18" y="27" fill="#334155" font-size="10.5">Germany only · Golf only · snapshot as of refresh date.</text>
+    <text x="18" y="41" fill="#334155" font-size="10.5">Cross-market comparison not in this release.</text>
+
+    <circle cx="5" cy="67" r="3" fill="#F59E0B"/>
+    <text x="18" y="71" fill="#334155" font-size="11" font-weight="600">Label is external</text>
+    <text x="18" y="87" fill="#334155" font-size="10.5">'top-price' comes from AutoScout's own algorithm, not</text>
+    <text x="18" y="101" fill="#334155" font-size="10.5">from our domain analysis. We're predicting the market's</text>
+    <text x="18" y="115" fill="#334155" font-size="10.5">opinion, not independent value.</text>
+
+    <circle cx="5" cy="141" r="3" fill="#F59E0B"/>
+    <text x="18" y="145" fill="#334155" font-size="11" font-weight="600">No demand signal</text>
+    <text x="18" y="161" fill="#334155" font-size="10.5">Expected price ≠ expected resale. A full decision needs</text>
+    <text x="18" y="175" fill="#334155" font-size="10.5">inventory velocity and end-buyer financing data.</text>
+
+    <circle cx="5" cy="201" r="3" fill="#10B981"/>
+    <text x="18" y="205" fill="#334155" font-size="11" font-weight="600">Next iteration</text>
+    <text x="18" y="221" fill="#334155" font-size="10.5">v2: add second country (NL or AT), incorporate regional</text>
+    <text x="18" y="235" fill="#334155" font-size="10.5">price bands, add days-on-market as a feature.</text>
+  </g>
+
+  <!-- Bottom band: source & methodology -->
+  <rect x="30" y="652" width="1136" height="86" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="50" y="678" fill="#475569" font-size="11" font-weight="600" letter-spacing="0.5">DATA &amp; METHOD</text>
+  <text x="50" y="698" fill="#334155" font-size="11">Source: AutoScout24 public listings, one-shot scrape  •  Warehouse: BigQuery  •  Pipeline: vw_bi_dashboard (combines fact_listings, fact_expected_price_predictions, fact_top_price_predictions)</text>
+  <text x="50" y="716" fill="#334155" font-size="11">Regression: multivariate OLS on mileage, age, power  •  Classification: Random Forest on listing features, threshold tunable on Page 3  •  Refresh: manual re-run of the pipeline produces a new snapshot.</text>
+
+  <!-- Footer -->
+  <text x="30" y="775" fill="#94A3B8" font-size="10">Prepared by: Data Unit, Retail Banking · Scope snapshot date: &lt;auto&gt; · Committee-facing view</text>
+  <text x="1170" y="775" text-anchor="end" fill="#94A3B8" font-size="10">WIREFRAME · Session 1 mock · not production data</text>
+</svg>

@@ -1,11 +1,15 @@
-﻿.venv/
-.tmp_nb_py/
-.tmp_requirements_*.txt
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
 __pycache__/
 *.pyc
+.venv/
 .ipynb_checkpoints/
-data/raw/
-data/processed/
 
+# Environment
+.env
 
-
+# OS
+Thumbs.db
